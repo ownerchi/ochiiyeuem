@@ -1,3 +1,4 @@
+repeat wait() until game:IsLoaded()
 if game.PlaceId == 2753915549 then
     World1 = true
 elseif game.PlaceId == 4442272183 then

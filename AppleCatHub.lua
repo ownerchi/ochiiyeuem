@@ -1,4 +1,28 @@
 repeat wait() until game:IsLoaded()
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "AppleCatHub_GUI"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ 
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(0, 250, 0, 100)
+Frame.Position = UDim2.new(0.5, -125, 0.1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Frame.BackgroundTransparency = 0.1
+Frame.BorderSizePixel = 2
+Frame.Name = "MainMenu"
+Frame.Parent = ScreenGui
+
+local Title = Instance.new("TextLabel")
+Title.Size = UDim2.new(1, 0, 0, 30)
+Title.Position = UDim2.new(0, 0, 0, 0)
+Title.BackgroundTransparency = 1
+Title.Text = "Apple Cat Hub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.Font = Enum.Font.GothamBold
+Title.Parent = Frame
 if game.PlaceId == 2753915549 then
     World1 = true
 elseif game.PlaceId == 4442272183 then
@@ -2555,7 +2579,7 @@ OrionLib:MakeNotification({
 wait(3)
 OrionLib:MakeNotification({
     Name = "Apple Cat Hub ",
-    Content = "Đăng Ký Kênh YouTube Apple Cat Hub  nhé💕",
+    Content = "Apple Cat Hub loading",
     Image = "rbxassetid://8192162908",
     Time = 10
 })
@@ -2569,13 +2593,13 @@ local W = Window:MakeTab({
 })
 
 local M = Window:MakeTab({
-    Name = "🔥FARM",
+    Name = "🔥Tab Farm",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local ST = Window:MakeTab({
-    Name = "⚙️CÀI ĐẶT",
+    Name = "⚙️Tab Setting ",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
@@ -2587,61 +2611,61 @@ local IQ = Window:MakeTab({
 })
 
 local S = Window:MakeTab({
-    Name = "📈 CHỈ SỐ",
+    Name = "📈 Tab Stats",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local E = Window:MakeTab({
-    Name = "ĐỊNH VỊ",
+    Name = "Tab Visual",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local RA = Window:MakeTab({
-    Name = "🎆 Raid",
+    Name = "🎆Tab Raid",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local LC = Window:MakeTab({
-    Name = "🙆‍♂️ BẢN THÂN",
+    Name = "🙆‍♂️Self",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local Wld = Window:MakeTab({
-    Name = "🚪 Teleport",
+    Name = "🚪Tab Teleport",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local SV = Window:MakeTab({
-    Name = "📈 thông tin Sever",
+    Name = "📈 Information Sever",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local D = Window:MakeTab({
-    Name = "🍍 trái ắc quỷ",
+    Name = "🍍 trái ác quỷ",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local R = Window:MakeTab({
-    Name = "☣️ tộc V4",
+    Name = "☣️ Race V4",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local SH = Window:MakeTab({
-    Name = "🛒 cửa hàng",
+    Name = "🛒 Shop",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
 
 local C = Window:MakeTab({
-    Name = "🔰 khác",
+    Name = "🔰 Misc",
     Icon = "rbxassetid://8192162908",
     PremiumOnly = false
 })
